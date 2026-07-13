@@ -20,7 +20,7 @@ EOT
     tags                    = optional(map(string))
     ip_configurations = object({
       private_ip_address           = optional(string)
-      private_ip_allocation_method = optional(string) # Default: "Dynamic"
+      private_ip_allocation_method = optional(string)
       subnet_id                    = string
     })
   }))
